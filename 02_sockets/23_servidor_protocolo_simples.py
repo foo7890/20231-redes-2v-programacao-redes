@@ -13,7 +13,7 @@ def handle_request(request):
         except:
             return "Mensagem inválida"
     elif tokens[0] == 'raiz':
-        if len(tokens != 2):
+        if len(tokens) != 2:
             return "Mensagem inválida"
         try:
             num = float(tokens[1])
